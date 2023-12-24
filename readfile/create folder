@@ -1,0 +1,10 @@
+import os
+
+def make_logs_dir():
+    try:
+        os.mkdir("logs/")
+    except FileExistsError:
+        print("Logs directory already exists")
+
+if __name__ == "__main__":
+    make_logs_dir()
