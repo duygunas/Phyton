@@ -1,0 +1,14 @@
+def fileOperations(dosyaismi):
+
+    with open (dosyaismi, "r") as dosya:
+        satirlar = dosya.readlines()
+    
+    sayilar = []
+    
+    for satir_sayisi, satir in enumerate (satirlar, start=1):
+        
+        sayi = int(satir.strip())
+        sayilar.append(sayi)
+        print(f"satır: {satir_sayisi} numara: {satir}")
+
+fileOperations("/Users/duygunas/Desktop/text files/1.txt")
