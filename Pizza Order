@@ -1,0 +1,14 @@
+specials = {'Sunday'    : 'spinach', 
+            'Monday'    : 'mushroom', 
+            'Tuesday'   : 'pepperoni', 
+            'Wednesday' : 'veggie',
+            'Thursday'  : 'cheese',
+            'Friday'    : 'sausage',
+            'Saturday'  : 'Hawaiian'}
+
+def order():
+    day = input("Please enter the day: ").title()  # Prompt the user to enter the day
+    pizza = specials[day]  # Directly access the value from the dictionary
+    print(f"Order the {pizza} pizza.")
+
+order()  # Call the function to execute the order process
